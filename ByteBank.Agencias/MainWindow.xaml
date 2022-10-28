@@ -1,0 +1,36 @@
+﻿<Window x:Class="ByteBank.Agencias.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ByteBank.Agencias"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        Background="DarkGray"
+        >
+        
+    <Canvas Name="container">
+
+        <!--<ListBox Name="lstAgencias" Width="270" Height="270" Canvas.Top="15" Canvas.Left="15">
+            
+            
+        </ListBox>-->
+
+        <StackPanel Canvas.Top="15" Canvas.Left="290">
+            <TextBlock FontWeight="Bold">Número</TextBlock>
+            <TextBlock Name="txtNumero"></TextBlock>
+            <TextBlock FontWeight="Bold">Nome</TextBlock>
+            <TextBlock Name="txtNome"></TextBlock>
+            <TextBlock FontWeight="Bold">Telefone</TextBlock>
+            <TextBlock Name="txtTelefone"></TextBlock>
+            <TextBlock FontWeight="Bold">Descrição</TextBlock>
+            <TextBlock Name="txtDescrivao"></TextBlock>
+            <TextBlock FontWeight="Bold">Endereço</TextBlock>
+            <TextBlock Name="txtEndereco"></TextBlock>
+        </StackPanel>
+        <Button Content="Excluir" Canvas.Left="451" Canvas.Top="304" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Click="Button_Click" Name="btnExcluir"/>
+        <Button Content="Editar" Canvas.Left="355" Canvas.Top="304" Width="64"  Name="btnEditar" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+    </Canvas>
+
+</Window>
